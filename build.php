@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 $dir = './';
 $files = scandir($dir, 1);
-$LAST_DATE = '2021-11-03';
+$LAST_DATE = '2021-11-27';
 
 function sanitize() {
 	foreach($files as $f) {
