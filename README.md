@@ -1,13 +1,12 @@
 # ssi
-COVID-19 overvågningsdata fra SSI (Statens Serum Institut) fra 06.05.2020 og frem. De oprindelige zip-filer er pakket ud i normaliserede, indekserbare kataloger med datoer, således at der kan itereres over data programmatisk og forudsigeligt. Det gør det muligt at scripte sig frem til f.eks kommunedata i JSON-format, som kan benyttes på hjemmesider der understøtter javascript. 
+COVID-19 [overvågningsdata](https://covid19.ssi.dk/overvagningsdata/download-fil-med-overvaagningdata) fra SSI (Statens Serum Institut) fra 06.05.2020 og frem. De oprindelige zip-filer er pakket ud i normaliserede, indekserbare kataloger med datoer, således at der kan itereres over data programmatisk og forudsigeligt. Det gør det muligt at scripte sig frem til f.eks kommunedata i JSON-format, som kan benyttes på hjemmesider der understøtter javascript. 
 
 ### Hvorfor
 Der har gennem hele COVID-19-perioden været skiftende problemer eller mærkværdigheder med SSI's overvågningsdata.
 
-Det er til at leve med at man skifter format, udvider / indskrænker tilgængeligheden af overvågningsdata o.lign. Men i COVID-19 og SSI's tilfælde virker der til at være tale om aktive benspænd. 
+Det er til at leve med at man skifter format, udvider / indskrænker tilgængeligheden af overvågningsdata o.lign. Men i COVID-19 og SSI's tilfælde taler vi om benspænd man ikke har kunne scripte sig ud af på en rimelig facon. Enten et aktivt valg, eller - at det bare ikke har været en service der på nogen måde har været taget særlig seriøst, og det har aldrig været meningen at offentligheden skulle kunne bruge SSI's overvågningsdata til noget som helst. En slags åbenheds-staffage.
 
-Vi taler om inkonsistent navngivning af datasæt. Der skiftes i flæng mellem store og små bogstaver, inkonsistente dato-formater og skift mellem ental / flertal. Til overflod forsynes zip-filer med en slags "hash"-kode i enden. I praksis gør det umuligt at benytte data uden en del "massage". Det er vanskeligt at tro, at det ikke er en helt bevidst taktik fra myndighedernes side. Alternativt er det ikke en opgave der på nogen måde er taget særlig seriøst, og det har sådan set aldrig været meningen at offentligheden skulle kunne bruge deres overvågningsdata til noget som helst. Pick your choice. 
-
+Vi taler om inkonsistent navngivning af datasæt. Der skiftes i flæng mellem store og små bogstaver, inkonsistente dato-formater og skift mellem ental / flertal. Til overflod forsynes zip-filer med en slags "hash"-kode i enden. I praksis gør det umuligt at benytte data uden en del "massage". 
 
 ### JSON
 Et par JSON-filer er klar til brug. 
