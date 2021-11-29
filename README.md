@@ -26,8 +26,16 @@ Testede, bekræftede, kumulativ incidens kommune / dag.
 ### Script
 `build.php` genererer ovenstående JSON for hele perioden, dvs fra 06.05.2020  frem til seneste kørsel. Det er ussel indianerprogrammering som kun har haft til formål at få hevet data ud i en fart. Hvis man selv vil bruge det, er man nødt til selv manuelt at korrigere slutdatoen. Det eneste intelligente er, at der tages forbehold for noget af det skrammel SSI får med fra eksporten fra deres regneark. 
 
-### Hent alle data
-Du kan benytte de scriptede JSON. Hvis du vil lege videre, der er data f.eks omkring f.eks køn og alder som detfrieord ikke har berørt, kan man hente hele pakken ned med 
+### Hent data ned til eget brug
+Du kan hive de genererede JSON ned via 
+
+`$ wget https://raw.githubusercontent.com/detfrieord/ssi/main/Municipality_cases_time_series.json`
+
+`$ wget https://raw.githubusercontent.com/detfrieord/ssi/main/Municipality_test_pos.json`
+
+`$ wget https://raw.githubusercontent.com/detfrieord/ssi/main/Municipality_tested_persons_time_series.json`
+
+Hvis du vil lege videre, der er f.eks data vedr. køn, alder, vaccinerede, regioner mv. som detfrieord ikke har berørt, kan man hente hele pakken ned med 
 
 `$ git clone https://github.com/detfrieord/ssi.git`
 
