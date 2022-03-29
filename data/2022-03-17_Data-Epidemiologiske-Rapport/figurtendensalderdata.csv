@@ -1,0 +1,28 @@
+﻿Aldersgrupper;Klassifikation;Antal nyindlæggelser;Andel nyindlæggelser (i aldersgruppe)
+0-9;Covid-19 diagnose;1324;0,5561
+0-9;Luftvejs- eller obsdiagnose;290;0,1218
+0-9;Anden diagnose;767;0,3221
+10-19;Covid-19 diagnose;438;0,3457
+10-19;Luftvejs- eller obsdiagnose;65;0,0513
+10-19;Anden diagnose;764;0,6030
+20-29;Covid-19 diagnose;1552;0,4911
+20-29;Luftvejs- eller obsdiagnose;110;0,0348
+20-29;Anden diagnose;1498;0,4741
+30-39;Covid-19 diagnose;2370;0,5723
+30-39;Luftvejs- eller obsdiagnose;102;0,0246
+30-39;Anden diagnose;1669;0,4030
+40-49;Covid-19 diagnose;2583;0,6781
+40-49;Luftvejs- eller obsdiagnose;112;0,0294
+40-49;Anden diagnose;1114;0,2925
+50-59;Covid-19 diagnose;3306;0,7099
+50-59;Luftvejs- eller obsdiagnose;167;0,0359
+50-59;Anden diagnose;1184;0,2542
+60-69;Covid-19 diagnose;3418;0,7332
+60-69;Luftvejs- eller obsdiagnose;178;0,0382
+60-69;Anden diagnose;1066;0,2287
+70-79;Covid-19 diagnose;5065;0,7864
+70-79;Luftvejs- eller obsdiagnose;208;0,0323
+70-79;Anden diagnose;1168;0,1813
+80+;Covid-19 diagnose;5455;0,8142
+80+;Luftvejs- eller obsdiagnose;252;0,0376
+80+;Anden diagnose;993;0,1482

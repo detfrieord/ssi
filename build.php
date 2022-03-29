@@ -3,9 +3,9 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+$LAST_DATE = '2022-03-30';
 $dir = './';
 $files = scandir($dir, 1);
-$LAST_DATE = '2022-01-11';
 
 function sanitize() {
 	foreach($files as $f) {
@@ -21,16 +21,13 @@ function sanitize() {
 	}
 }
 
-
 //generer kommune kumulativ incidens
 function createMuncTestPos() {
 	global $LAST_DATE;
 	$begin = new DateTime('2020-05-06');
 	$end = new DateTime($LAST_DATE);
-
 	$interval = DateInterval::createFromDateString('1 day');
 	$period = new DatePeriod($begin, $interval, $end);
-
 	$json = array();
 
 	foreach ($period as $dt) {
@@ -39,7 +36,6 @@ function createMuncTestPos() {
 		$file = $dir.'/Municipality_test_pos.csv';
 	
 		if (file_exists($file)) {
-			//echo 'createMuncTestPos() '.$date.' ....ok<br>';
 			$LAST_DATE = $date; //!!
 			$handle = fopen($file, 'r');
 			$headers = fgetcsv($handle, 1024, ';');
@@ -63,7 +59,6 @@ function createMuncTestPos() {
 }
 createMuncTestPos();
 
-
 //kommune cases time series
 function createCasesTimeSeries() {
 	global $LAST_DATE;
@@ -86,7 +81,6 @@ function createCasesTimeSeries() {
 }
 createCasesTimeSeries();
 
-
 //kommune test time series
 function createTestTimeSeries() {
 	global $LAST_DATE;
@@ -108,6 +102,5 @@ function createTestTimeSeries() {
 	file_put_contents('Municipality_tested_persons_time_series.json', $test);
 }
 createTestTimeSeries();
-
 
 ?>
